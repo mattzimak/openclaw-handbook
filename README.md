@@ -1,6 +1,6 @@
 # OpenClaw handbook
 
-72 entries · last verified 2026-09-09 · 72 links checked · 0 dead
+72 entries · last verified 2026-09-21 · 72 links checked · 0 dead
 
 One founder's handbook for running a company with an OpenClaw agent: the setup choices I made and why, the security rules I keep, the skills I install, the memory patterns that stuck, and the people worth learning from. It is not a directory of everything that exists - if something is here, it earned its place in real work. The longer notes live in [FIELD-NOTES.md](FIELD-NOTES.md). Suggest a link by opening an issue (see [CONTRIBUTING.md](CONTRIBUTING.md)).
 
@@ -54,10 +54,10 @@ Videos, threads and write-ups that taught me how OpenClaw actually behaves - sta
 - [build-your-own-openclaw](https://github.com/czl9707/build-your-own-openclaw) - The 17-step tutorial repo (MIT) the video walks through: from the first chat loop to tools, multi-layer prompts, agent dispatch, concurrency control and memory, so you understand what OpenClaw does under the hood (via @RoundtableSpace's post) · 1.9k stars · MIT · updated 2026-07
 - [Claude Code as a personal OS - setup with Moritz Kremb (Peter Yang on LinkedIn)](https://www.linkedin.com/posts/petergyang_this-is-the-most-complete-setup-ive-seen-ugcPost-7459248459813064705-5eB4) - Peter Yang's video post with Moritz Kremb, captioned 'this is the most complete setup I've seen'. Filed under my OpenClaw learning material although the walkthrough is Claude Code as a personal OS.
 - [clawchief](https://github.com/snarktank/clawchief) - Ryan Carson's executive-assistant layer for OpenClaw: skills, workspace files (HEARTBEAT.md, TOOLS.md, one canonical tasks.md), private context templates and cron jobs, installed on top of a working OpenClaw plus Google access (via @ryancarson's post) · 1.1k stars · updated 2026-04
-- [From skeptic to true believer: How OpenClaw changed my life | Claire Vo](https://www.youtube.com/watch?v=DIa0MYJzM5I&t=1s) - Claire Vo is the host of our sister podcast, “How I AI,” a former product executive and engineer, and founder of an AI startup called ChatPRD.
-- [Full Tutorial: Use OpenClaw to Build a Business That Runs Itself in 35 Min | Nat Eliason](https://www.youtube.com/watch?v=nSBKCZQkmYw) - Meet Felix: The OpenClaw bot building its own business.
+- [From skeptic to true believer: How OpenClaw changed my life | Claire Vo](https://www.youtube.com/watch?v=DIa0MYJzM5I&t=1s) - YouTube video by Lenny's Podcast.
+- [Full Tutorial: Use OpenClaw to Build a Business That Runs Itself in 35 Min | Nat Eliason](https://www.youtube.com/watch?v=nSBKCZQkmYw) - YouTube video by Peter Yang.
 - [How to set up Clawdbot for Google Ads and Meta Ads (get-ryze.ai)](https://www.get-ryze.ai/blog/clawdbot-google-meta-ads) - A practical guide for marketers who want an AI assistant managing their ad accounts: pull reports, analyze data and automate Google Ads and Meta Ads tasks over text messages. Clawdbot is OpenClaw's old name.
-- [I fixed OpenClaw so it actually works (full setup)](https://www.youtube.com/watch?v=fd4k16REDOU) - I sit down with Moritz Kremb, an OpenClaw power user and agency builder based in Berlin, to break down how to actually make OpenClaw useful.
+- [I fixed OpenClaw so it actually works (full setup)](https://www.youtube.com/watch?v=fd4k16REDOU) - YouTube video by Greg Isenberg.
 - [I rebuilt my entire life OS with OpenClaw (r/OpenClawUseCases)](https://www.reddit.com/r/OpenClawUseCases/comments/1rd9t8b/i_rebuilt_my_entire_life_os_with_openclaw_after) - Reddit write-up of the seven use cases from Matthew Berman's video on the 21 OpenClaw automations he runs daily: a self-updating personal CRM fed by Gmail and meeting transcripts, a nightly four-agent security council, an eight-expert business advisory council, a video idea research pipeline, a morning briefing to Telegram, cross-platform social stats and a food journal. The thread's own takeaway: scheduled skills plus Telegram notifications plus clean data pipelines, nothing magic.
 - [OpenClaw optimized setup guide, the post-install checklist (Moritz Kremb on X)](https://x.com/moritzkremb/status/2029304864719667335) - Moritz Kremb's X article with the 30 to 60 minute hardening pass after a fresh install: personalise USER.md, IDENTITY.md and SOUL.md, make memory reliable with MEMORY.md plus daily files and a heartbeat rule that promotes learnings, set a primary model with fallbacks, move secrets out of the workspace and allowlist Telegram, add a Brave key and a managed browser profile, harden heartbeat and cron...
 - [Setting up OpenClaw properly, not just install and chat (Corey Ganim on X)](https://x.com/coreyganim/status/2036103806975426779) - when I send this to all my friends and they finally understand how to perfectly set up OpenClaw not just "install and chat" a real workspace with memory, skills, and custom behavior.
@@ -89,11 +89,11 @@ How the agent remembers between sessions: the learnings-folder pattern, lossless
 
 - [Cognee](https://github.com/topoteretes/cognee) - Open-source memory platform that builds a knowledge graph from your agent's data, with an official OpenClaw integration in its docs (via @KSimback's post) · 30k stars · Apache-2.0 · updated 2026-09
 - [Give your OpenClaw the memory it needs, full guide (Kevin Simback on X)](https://x.com/ksimback/status/2024180197910864182) - Kevin Simback's X article on why OpenClaw forgets: memory is never saved (the model decides what is worth writing), saved but never searched, or destroyed by context compaction mid-session.
-- [Hindsight](https://github.com/vectorize-io/hindsight) - agent memory that learns - Hindsight: Agent Memory That Learns. · 23k stars · MIT · updated 2026-09
-- [LCM](https://github.com/martian-engineering/lossless-claw) - Lossless Context Management (open-source plugin designed by Martian Engineering) to replace the default, lossy conversation-compaction system. · 4.9k stars · MIT · updated 2026-08
-- [Mem0](https://github.com/mem0ai/mem0) - Drop-in memory layer for agents, the option Kevin reaches for when config-only memory is not enough; it has an OpenClaw write-up on its blog (via @KSimback's post) · 64k stars · Apache-2.0 · updated 2026-09
-- [QMD](https://github.com/tobi/qmd) - Tobi Lutke's mini CLI search engine for notes and docs; local search over MEMORY.md and the daily files so the agent finds what it already wrote (via @KSimback's post) · 29k stars · MIT · updated 2026-08
-- [Supermemory](https://supermemory.ai) - Agents need memory. Supermemory is building the default engine for memory and continual learning for agents.
+- [Hindsight](https://github.com/vectorize-io/hindsight) - agent memory that learns - Hindsight: Agent Memory That Learns. · 24k stars · MIT · updated 2026-09
+- [LCM](https://github.com/martian-engineering/lossless-claw) - Lossless Context Management (open-source plugin designed by Martian Engineering) to replace the default, lossy conversation-compaction system. · 4.9k stars · MIT · updated 2026-09
+- [Mem0](https://github.com/mem0ai/mem0) - Drop-in memory layer for agents, the option Kevin reaches for when config-only memory is not enough; it has an OpenClaw write-up on its blog (via @KSimback's post) · 65k stars · Apache-2.0 · updated 2026-09
+- [QMD](https://github.com/tobi/qmd) - Tobi Lutke's mini CLI search engine for notes and docs; local search over MEMORY.md and the daily files so the agent finds what it already wrote (via @KSimback's post) · 29k stars · MIT · updated 2026-09
+- [Supermemory](https://supermemory.ai) - Agents need memory. supermemory is building the default engine for memory and continual learning for agents.
 
 My notes on this section: [Memory and context](FIELD-NOTES.md#memory-and-context) (12 notes).
 
@@ -114,7 +114,7 @@ Which model runs what, how to switch, and how to stop the bill from growing: rou
 
 - [ClawRouter](https://github.com/BlockRunAI/ClawRouter) - Smart LLM routing to optimize token burn, if simple question = routing to cheap model, complex code - escalates to Opus or Sonnet. · 6.6k stars · MIT · updated 2026-09
 - [Local heartbeat and 9 more OpenClaw lessons (Divyanshi Sharma on Instagram)](https://www.instagram.com/p/DVJPnoGkvnd?img_index=1) - Divyanshi Sharma's 18-slide carousel, ten things she wishes she knew before running OpenClaw: the agent makes 48 heartbeat calls a day by default, so route heartbeats to a local model (Ollama with llama3.2:1b) and keep the paid API for real work, stop model-hopping across free tiers and set automatic fallback models, install only trusted skills from ClawHub after reading SKILL.md, fight context...
-- [Ollama](https://github.com/ollama/ollama) - Run llama3.2:1b or any small model locally so the OpenClaw heartbeat costs nothing and works offline, and keep the paid API for the real work (via @divyannshisharma's post) · 180k stars · MIT · updated 2026-09
+- [Ollama](https://github.com/ollama/ollama) - Run llama3.2:1b or any small model locally so the OpenClaw heartbeat costs nothing and works offline, and keep the paid API for the real work (via @divyannshisharma's post) · 181k stars · MIT · updated 2026-09
 
 ### GPT 5.4
 
@@ -150,11 +150,11 @@ The skills I install or keep an eye on, grouped by what they are for. Star count
 
 ### Token Efficiency
 
-- [qmd-skill](https://github.com/levineam/qmd-skill) - Token-efficiency skill; my note says it cuts token usage by 95%. The repository has no description of its own. · 696 stars · updated 2026-02
+- [qmd-skill](https://github.com/levineam/qmd-skill) - Token-efficiency skill; my note says it cuts token usage by 95%. The repository has no description of its own. · 700 stars · updated 2026-02
 
 ### Memory
 
-- [openclaw-supermemory](https://github.com/supermemoryai/openclaw-supermemory) - Unlimited memory for the agent - long-term memory and recall for your OpenClaw agent through Supermemory. · 799 stars · updated 2026-09
+- [openclaw-supermemory](https://github.com/supermemoryai/openclaw-supermemory) - Unlimited memory for the agent - long-term memory and recall for your OpenClaw agent through Supermemory. · 795 stars · updated 2026-09
 
 ### Security
 
@@ -163,7 +163,7 @@ The skills I install or keep an eye on, grouped by what they are for. Star count
 
 ### Research
 
-- [Last30days](https://github.com/mvanhorn/last30days-skill) - useful for content/marketing, researches topics across Reddit, X, YouTube, HN, and Polymarket from the last 30 days, then synthesizes findings and can generate copy-paste prompts. · 61k stars · MIT · updated 2026-09
+- [Last30days](https://github.com/mvanhorn/last30days-skill) - useful for content/marketing, researches topics across Reddit, X, YouTube, HN, and Polymarket from the last 30 days, then synthesizes findings and can generate copy-paste prompts. · 62k stars · MIT · updated 2026-09
 
 ### Image & Video generation
 
@@ -193,13 +193,13 @@ Prompt packs worth stealing from, the awesome-lists I go back to, and a few plac
 ### Prompts
 
 - [Design Director Agent](https://x.com/kloss_xyz/status/2023142088850944283) - kloss's system prompt that replaces a design agency with OpenClaw: a Design Director agent that inherits Claude Code's frontend-design skill, extracts 30 to 50 scored references from designer accounts and sites you like, turns them into tokens and principles, spawns eight sub-agents (visual identity, UI and UX, design systems, motion, creative direction, layout and typography, design research,...
-- [frontend-design skill (anthropics/skills)](https://github.com/anthropics/skills/tree/main/skills/frontend-design) - Anthropic's frontend-design skill is the floor the Design Director prompt inherits from: design thinking, typography, motion and anti-slop rules, with your extracted design DNA layered on top (via @kloss_xyz's post) · 175k stars · updated 2026-09
+- [frontend-design skill (anthropics/skills)](https://github.com/anthropics/skills/tree/main/skills/frontend-design) - Anthropic's frontend-design skill is the floor the Design Director prompt inherits from: design thinking, typography, motion and anti-slop rules, with your extracted design DNA layered on top (via @kloss_xyz's post) · 177k stars · updated 2026-09
 - [Mission Control Dashboard](https://x.com/kloss_xyz/status/2022461932759060993) - JARVIS-style AI command center, plus the Jarvis initialization sequence: 8 prompts to configure your OpenClaw agent (both in the same post by @kloss_xyz).
 - [OpenClaw implementation prompts (Matthew Berman's gist)](https://gist.github.com/mberman84/065631c62d6d8f30ecb14748c00fc6d9) - Each prompt is a self-contained brief you can hand to an AI coding assistant, or use as a project spec, to build that use case from scratch - it starts with a personal CRM.
 
 ### Collections
 
-- [Awesome Openclaw](https://github.com/alvinreal/awesome-openclaw) - A curated list of the best OpenClaw resources: official projects, skills, plugins, dashboards, deployment tooling, memory systems, and guides. · 733 stars · CC0-1.0 · updated 2026-07
+- [Awesome Openclaw](https://github.com/alvinreal/awesome-openclaw) - A curated list of the best OpenClaw resources: official projects, skills, plugins, dashboards, deployment tooling, memory systems, and guides. · 735 stars · CC0-1.0 · updated 2026-07
 - [Awesome openclaw skills](https://github.com/VoltAgent/awesome-openclaw-skills) - The awesome collection of OpenClaw skills. 5,400+ skills filtered and categorized from the official OpenClaw Skills Registry.🦞. · 52k stars · MIT · updated 2026-09
 - [Awesome Openclaw Tips](https://github.com/alvinreal/awesome-openclaw-tips#mem-01-make-your-agent-learn-from-its-mistakes) - Practical OpenClaw tips for memory, reliability, cost, automation, and multi-agent workflows. · 229 stars · updated 2026-05
 
@@ -258,7 +258,7 @@ Everything I wrote down, grouped by section, lives in [FIELD-NOTES.md](FIELD-NOT
 ### Self-improving
 
 - [Self-Improving Agent skill (Corey Ganim on X)](https://x.com/coreyganim/status/2035757428579389768) - How to make your OpenClaw agent learn from its mistakes: Install the Self-Improving Agent skill.
-- [self-improving-agent](https://github.com/pskoett/self-improving-agent) - The skill Corey's post is about: logs every error, correction and feature request to files in its learnings folder (.learnings/ERRORS.md, LEARNINGS.md and FEATURE_REQUESTS.md) so the agent stops repeating mistakes; 478k installs on ClawHub (via @coreyganim's post) · 748 stars · updated 2026-08
+- [self-improving-agent](https://github.com/pskoett/self-improving-agent) - The skill Corey's post is about: logs every error, correction and feature request to files in its learnings folder (.learnings/ERRORS.md, LEARNINGS.md and FEATURE_REQUESTS.md) so the agent stops repeating mistakes; 478k installs on ClawHub (via @coreyganim's post) · 763 stars · updated 2026-08
 
 ## Other useful lists
 
@@ -283,7 +283,7 @@ From there everything is automated and reproducible from this repo alone:
 
 Nothing in this README or in `FIELD-NOTES.md` is edited by hand. Fixes go to `data/overrides.json` (keyed by the entry id in `data/links.csv`, or by block id under `_notes` for a note) and the next build picks them up.
 
-Current build: 72 entries in 12 sections, 157 field notes. Links checked: 72, dead: 0, last check: 2026-09-09. What the sync excluded and why is in `data/_report.md`. The field notes are rendered into `FIELD-NOTES.md` by the same build.
+Current build: 72 entries in 12 sections, 157 field notes. Links checked: 72, dead: 0, last check: 2026-09-21. What the sync excluded and why is in `data/_report.md`. The field notes are rendered into `FIELD-NOTES.md` by the same build.
 
 ## License
 
