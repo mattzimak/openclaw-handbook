@@ -1,5 +1,7 @@
 # OpenClaw handbook
 
+[![License](https://img.shields.io/github/license/mattzimak/openclaw-handbook)](https://github.com/mattzimak/openclaw-handbook/blob/main/LICENSE) ![Last commit](https://img.shields.io/github/last-commit/mattzimak/openclaw-handbook?label=updated) ![72 entries](https://img.shields.io/badge/72%20entries-2ea043) ![0 dead links](https://img.shields.io/badge/0%20dead%20links-2ea043) ![Unofficial](https://img.shields.io/badge/Unofficial-lightgrey)
+
 72 entries · last verified 2026-09-09 · 72 links checked · 0 dead
 
 One founder's handbook for running a company with an OpenClaw agent: the setup choices I made and why, the security rules I keep, the skills I install, the memory patterns that stuck, and the people worth learning from. It is not a directory of everything that exists - if something is here, it earned its place in real work. The longer notes live in [FIELD-NOTES.md](FIELD-NOTES.md). Suggest a link by opening an issue (see [CONTRIBUTING.md](CONTRIBUTING.md)).
